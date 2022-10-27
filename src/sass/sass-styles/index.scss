@@ -1,0 +1,21 @@
+// Variables
+@import 'variables';
+
+// Base/Reset Styles & Layout
+@import 'base';
+@import 'breakpoints';
+
+// Colors
+@import 'colors';
+
+// Components
+@import 'components/containers';
+@import 'components/projects-section';
+@import 'components/navbar';
+@import 'components/about-section';
+@import 'components/header-section';
+@import 'components/contact-sec';
+
+
+// Utilities (margin, padding, opacity)
+@import 'utilities';

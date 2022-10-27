@@ -1,0 +1,22 @@
+.App {
+    background-color: $bg-color;
+}
+
+.content-container {
+    width: 100%;
+    max-width: 1400px;
+    padding: 0 20px;
+    margin: 0 auto;
+    @include ml {
+        padding: 0 40px;
+    }
+    @include lp {
+        padding: 0 80px;
+    }
+}
+
+// .main__container {
+//     display: flex;
+//     flex-direction: column;
+// }
+

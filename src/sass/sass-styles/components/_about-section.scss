@@ -1,0 +1,127 @@
+.about-sec-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    height: 80vh;
+    .photo__container {
+        padding: 40px;
+        display: flex;
+        align-items: center;
+        .photo-frame__cont {
+            margin: 0 auto;
+            width: 100%;
+            max-width: 400px;
+            background-color: #457b9d;
+            display: flex;
+            border-radius: 10px;
+            border: 2px solid $title-color;
+            &:hover {
+                border: 2px solid $feature-color;
+            }
+            img {
+                border-radius: 10px;
+            }
+        }
+        @include tl {
+            order: 1;
+        }
+    }
+    .about-info__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        .who-i-am {
+            font-size: 1.4rem;
+            font-weight: 400;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            color: $text-color;
+        }
+        h2 {
+            font-size: 4.8rem;
+            font-weight: 700;
+            color: $title-color;
+        }
+        .about-p__cont {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            p {
+                font-size: $font-size-pm;
+                color: $text-color;
+            }
+        }
+        .hr-about {
+            width: 20%;
+            border-color: $feature-color;
+        }
+    }
+    @include tl {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* From uiverse.io by @alexmaracinaru */
+.cta {
+    position: relative;
+    // margin: auto;
+    width: 175px;
+    height: 45px;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+   }
+   
+   .cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: $feature-color;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+   }
+   
+   .cta span a {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: $font-size-pl;
+    font-weight: 600;
+    color: $title-color;
+   }
+   
+   .cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: $title-color;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+   }
+   
+   .cta:hover:before {
+    width: 100%;
+    background: $feature-color;
+   }
+   
+   .cta:hover svg {
+    transform: translateX(0);
+   }
+   
+   .cta:active {
+    transform: scale(0.95);
+   }
+
