@@ -18,7 +18,7 @@ const AboutMe = () => {
                     <p>Hi there! I'm Christian and I'm a Frontend Web Developer, I've knowledge of the main web technologies such as HTML, CSS, JAVASCRIPT. I've also used REACTJS and REDUX on my last projects. </p>
                     <p>
                         I recently joined a bootcamp (Academlo) where I learned and put into practice most of the latest and most used technologies specially for Front-End development.
-                        I'm always open to keep learning whatever is needed for the projects I'm working on, right now I'm learning Typescript!</p>
+                        I'm always open to keep learning whatever is needed for the projects I'm working on.</p>
                 </div>
                 <button className="cta">
                     <span><a href={cv} target="_blank">Display CV</a></span>
