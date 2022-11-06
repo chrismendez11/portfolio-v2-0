@@ -2,10 +2,11 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 0px;
-    height: calc(80vh - 80px);
+    height: calc(100vh - 80px);
     @include tl {
         grid-template-columns: repeat(2, 1fr);
         gap: 40px;
+        height: calc(80vh - 80px);
     }
     .header-title__cont {
         display: flex;

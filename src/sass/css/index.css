@@ -47,6 +47,12 @@ a {
   display: flex;
   flex-direction: column;
   gap: 80px;
+  margin-top: 150px;
+}
+@media (min-width: 768px) {
+  .projects-sect-container {
+    margin-top: 0;
+  }
 }
 
 .title-cont {
@@ -247,7 +253,7 @@ nav a:hover {
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
-    background-color: red;
+    background-color: #0d1821;
     transition: 1s;
     transform: translateY(-100vh);
   }
@@ -402,12 +408,13 @@ nav a:hover {
   display: grid;
   grid-template-columns: 1fr;
   gap: 0px;
-  height: calc(80vh - 80px);
+  height: calc(100vh - 80px);
 }
 @media (min-width: 768px) {
   .header-sec__container {
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
+    height: calc(80vh - 80px);
   }
 }
 .header-sec__container .header-title__cont {
