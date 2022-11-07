@@ -10,7 +10,7 @@ const FavProject = ({project}: Props) => {
     <article className='project-card' id={String(project.id)}>
         <main className='card__backgound-cont'>
               <div className='card__img-cont'>
-                <img src={project.img} alt="" />
+                <img src={project.gif} alt="" />
               </div>
         </main>
         <footer className='card__footer'>

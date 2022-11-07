@@ -3,6 +3,7 @@ export type Project = {
     name: string,
     description: string,
     img: string,
+    gif: string,
     github: string,
     display: string
 }
