@@ -11,12 +11,12 @@ const AllProjects: Project[] = [{
 },
 {
     id: "two",
-    name: 'Rick and Morty API',
-    description: "On this app you'll be able to search a planet from 1 to 126 and see all the characters from that specific planet. This is based in the famous series 'Rick and Morty'.",
-    img: 'https://media.discordapp.net/attachments/1034322391893020683/1034322485652500520/Rick-And-Morty-img.PNG?width=1335&height=676',
-    gif: 'https://media.discordapp.net/attachments/1034322391893020683/1039010815770116134/rickandmorty.gif',
-    github: "https://github.com/chrismendez11/rick-and-morty",
-    display: "https://rick-and-morty-api-christian-m.netlify.app/"
+    name: 'Trivia Quiz',
+    description: "Trivia Quiz is a game where you can put into practice your knowledge in different areas like sports, games or just general knowledge.",
+    img: 'https://media.discordapp.net/attachments/1034322391893020683/1051506982084952094/image.png?width=1339&height=676',
+    gif: 'https://media.discordapp.net/attachments/1034322391893020683/1051299718866665552/TriviaVideo.gif',
+    github: "https://github.com/chrismendez11/trivia-quiz",
+    display: "https://trivia-quiz-christian-m.netlify.app/"
 },
 {
     id: "three",
@@ -38,3 +38,15 @@ const AllProjects: Project[] = [{
 }]
 
 export default AllProjects;
+
+// More projects
+
+// {
+//     id: "two",
+//     name: 'Rick and Morty API',
+//     description: "On this app you'll be able to search a planet from 1 to 126 and see all the characters from that specific planet. This is based in the famous series 'Rick and Morty'.",
+//     img: 'https://media.discordapp.net/attachments/1034322391893020683/1034322485652500520/Rick-And-Morty-img.PNG?width=1335&height=676',
+//     gif: 'https://media.discordapp.net/attachments/1034322391893020683/1039010815770116134/rickandmorty.gif',
+//     github: "https://github.com/chrismendez11/rick-and-morty",
+//     display: "https://rick-and-morty-api-christian-m.netlify.app/"
+// }
