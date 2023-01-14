@@ -14,7 +14,7 @@ const AllProjects: Project[] = [{
     name: 'Trivia Quiz',
     description: "Trivia Quiz is a game where you can put into practice your knowledge in different areas like sports, games or just general knowledge.",
     img: 'https://media.discordapp.net/attachments/1034322391893020683/1051506982084952094/image.png?width=1339&height=676',
-    gif: 'https://media.discordapp.net/attachments/1034322391893020683/1051299718866665552/TriviaVideo.gif',
+    gif: 'https://media.discordapp.net/attachments/1034322391893020683/1063926089048666183/trivia-video.gif',
     github: "https://github.com/chrismendez11/trivia-quiz",
     display: "https://trivia-quiz-christian-m.netlify.app/"
 },
