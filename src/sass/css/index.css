@@ -23,7 +23,7 @@ a {
 }
 
 .App {
-  background-color: #0d1821;
+  background: rgba(4, 102, 200, 0.5);
 }
 
 .content-container {
@@ -44,13 +44,34 @@ a {
 }
 
 .projects-sect-container {
+  width: 100%;
+  background-color: #051923;
+  border-top: 1px solid white;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.projects-sect-container .projects-content {
   display: flex;
   flex-direction: column;
   gap: 80px;
   margin-top: 150px;
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+@media (min-width: 425px) {
+  .projects-sect-container .projects-content {
+    padding: 0 40px;
+  }
+}
+@media (min-width: 1024px) {
+  .projects-sect-container .projects-content {
+    padding: 0 80px;
+  }
 }
 @media (min-width: 768px) {
-  .projects-sect-container {
+  .projects-sect-container .projects-content {
     margin-top: 0;
   }
 }
@@ -66,7 +87,7 @@ a {
   display: flex;
   gap: 10px;
   align-items: center;
-  color: #bfc0c0;
+  color: white;
 }
 .title-cont h2 {
   font-size: 4.8rem;
@@ -74,13 +95,14 @@ a {
   color: white;
 }
 .title-cont p {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 400;
-  color: #bfc0c0;
+  color: white;
+  line-height: 25px;
 }
 .title-cont .hr-projects {
   width: 15%;
-  border-color: #59a5d8;
+  border-color: white;
 }
 
 .fav-projects-cont {
@@ -173,13 +195,13 @@ a {
   opacity: 0.5;
 }
 .card__info-cont span a {
-  color: #59a5d8;
+  color: white;
 }
 .card__info-cont span .fa-github {
-  color: #ced4da;
+  color: white;
 }
 .card__info-cont span .fa-link {
-  color: #ced4da;
+  color: white;
 }
 
 .btn-allprojects__cont {
@@ -188,10 +210,10 @@ a {
 .btn-allprojects__cont a {
   font-size: 2rem;
   cursor: pointer;
-  color: #59a5d8;
+  color: #0466c8;
 }
 .btn-allprojects__cont a:hover {
-  border-bottom: 1px solid #59a5d8;
+  border-bottom: 1px solid #0466c8;
 }
 
 .navbar-cont {
@@ -200,7 +222,6 @@ a {
   justify-content: space-between;
   height: 80px;
   padding: 0 2rem;
-  background-color: #0d1821;
 }
 .navbar-cont h2 {
   font-size: 4rem;
@@ -212,11 +233,11 @@ a {
 nav a {
   color: white;
   text-decoration: none;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 
 nav a:hover {
-  color: #59a5d8;
+  color: #051923;
 }
 
 .navbar-cont .nav-btn {
@@ -253,7 +274,7 @@ nav a:hover {
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
-    background-color: #0d1821;
+    background-color: #051923;
     transition: 1s;
     transform: translateY(-100vh);
   }
@@ -275,70 +296,88 @@ nav a:hover {
   }
 }
 .about-sec-container {
+  width: 100%;
+  background-color: white;
+}
+.about-sec-container .about-content {
   display: grid;
   grid-template-columns: 1fr;
   gap: 40px;
   height: 80vh;
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
-.about-sec-container .photo__container {
+@media (min-width: 425px) {
+  .about-sec-container .about-content {
+    padding: 0 40px;
+  }
+}
+@media (min-width: 1024px) {
+  .about-sec-container .about-content {
+    padding: 0 80px;
+  }
+}
+.about-sec-container .about-content .photo__container {
   padding: 40px;
   display: flex;
   align-items: center;
 }
-.about-sec-container .photo__container .photo-frame__cont {
+.about-sec-container .about-content .photo__container .photo-frame__cont {
   margin: 0 auto;
   width: 100%;
   max-width: 400px;
-  background-color: #457b9d;
   display: flex;
-  border-radius: 10px;
-  border: 2px solid white;
+  border-radius: 5px;
+  border: 2px solid #000;
 }
-.about-sec-container .photo__container .photo-frame__cont:hover {
-  border: 2px solid #59a5d8;
+.about-sec-container .about-content .photo__container .photo-frame__cont:hover {
+  border: 2px solid #0466c8;
 }
-.about-sec-container .photo__container .photo-frame__cont img {
+.about-sec-container .about-content .photo__container .photo-frame__cont img {
   border-radius: 10px;
 }
 @media (min-width: 768px) {
-  .about-sec-container .photo__container {
+  .about-sec-container .about-content .photo__container {
     order: 1;
   }
 }
-.about-sec-container .about-info__container {
+.about-sec-container .about-content .about-info__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 20px;
 }
-.about-sec-container .about-info__container .who-i-am {
+.about-sec-container .about-content .about-info__container .who-i-am {
   font-size: 1.4rem;
   font-weight: 400;
   display: flex;
   gap: 10px;
   align-items: center;
-  color: #bfc0c0;
+  color: #051923;
 }
-.about-sec-container .about-info__container h2 {
+.about-sec-container .about-content .about-info__container h2 {
   font-size: 4.8rem;
   font-weight: 700;
-  color: white;
+  color: #051923;
 }
-.about-sec-container .about-info__container .about-p__cont {
+.about-sec-container .about-content .about-info__container .about-p__cont {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.about-sec-container .about-info__container .about-p__cont p {
+.about-sec-container .about-content .about-info__container .about-p__cont p {
   font-size: 1.6rem;
-  color: #bfc0c0;
+  color: #051923;
+  line-height: 25px;
 }
-.about-sec-container .about-info__container .hr-about {
+.about-sec-container .about-content .about-info__container .hr-about {
   width: 20%;
-  border-color: #59a5d8;
+  border-color: #0466c8;
 }
 @media (min-width: 768px) {
-  .about-sec-container {
+  .about-sec-container .about-content {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -364,7 +403,7 @@ nav a:hover {
   left: 0;
   display: block;
   border-radius: 50px;
-  background: #59a5d8;
+  background: #0466c8;
   width: 45px;
   height: 45px;
   transition: all 0.3s ease;
@@ -374,8 +413,8 @@ nav a:hover {
   position: relative;
   font-family: "Ubuntu", sans-serif;
   font-size: 2rem;
-  font-weight: 600;
-  color: white;
+  font-weight: 500;
+  color: #051923;
 }
 
 .cta svg {
@@ -385,7 +424,7 @@ nav a:hover {
   fill: none;
   stroke-linecap: round;
   stroke-linejoin: round;
-  stroke: white;
+  stroke: #051923;
   stroke-width: 2;
   transform: translateX(-5px);
   transition: all 0.3s ease;
@@ -393,7 +432,7 @@ nav a:hover {
 
 .cta:hover:before {
   width: 100%;
-  background: #59a5d8;
+  background: #0466c8;
 }
 
 .cta:hover svg {
@@ -404,11 +443,29 @@ nav a:hover {
   transform: scale(0.95);
 }
 
+.nav-header__cont {
+  width: 100%;
+  height: 100vh;
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+@media (min-width: 425px) {
+  .nav-header__cont {
+    padding: 0 40px;
+  }
+}
+@media (min-width: 1024px) {
+  .nav-header__cont {
+    padding: 0 80px;
+  }
+}
+
 .header-sec__container {
   display: grid;
   grid-template-columns: 1fr;
   gap: 0px;
-  height: calc(100vh - 80px);
 }
 @media (min-width: 768px) {
   .header-sec__container {
@@ -431,7 +488,12 @@ nav a:hover {
 .header-sec__container .header-title__cont .header-title__text span {
   font-size: 1.8rem;
   font-weight: 500;
-  color: #bfc0c0;
+  color: #051923;
+}
+@media (min-width: 1024px) {
+  .header-sec__container .header-title__cont .header-title__text span {
+    font-size: 2.2rem;
+  }
 }
 .header-sec__container .header-title__cont .header-title__text h1 {
   font-size: 3.6rem;
@@ -450,11 +512,16 @@ nav a:hover {
 }
 .header-sec__container .header-title__cont .header-title__text p {
   font-size: 1.8rem;
-  color: #bfc0c0;
+  color: #051923;
   font-weight: 500;
 }
+@media (min-width: 1024px) {
+  .header-sec__container .header-title__cont .header-title__text p {
+    font-size: 2.2rem;
+  }
+}
 .header-sec__container .header-title__cont .header-title__text .name {
-  color: #59a5d8;
+  color: white;
 }
 .header-sec__container .header-images__cont {
   display: grid;
@@ -470,11 +537,11 @@ nav a:hover {
   border-radius: 10px;
   background-color: #bbd0ff;
   display: flex;
-  border: 1px solid white;
+  border: 1px solid #000;
   box-shadow: -2px 5px 15px 2px rgba(0, 0, 0, 0.75);
 }
 .header-sec__container .header-images__cont .header-img-cont:hover {
-  border: 2px solid #59a5d8;
+  border: 2px solid #051923;
 }
 .header-sec__container .header-images__cont .header-img-cont img {
   border-radius: 10px;
@@ -510,29 +577,72 @@ nav a:hover {
 }
 
 .contact-sec__container {
+  border-top: 1px solid #051923;
   display: flex;
   flex-direction: column;
   gap: 40px;
   text-align: center;
   height: 80vh;
   justify-content: center;
+  background-color: white;
 }
 .contact-sec__container h2 {
   font-size: 4.8rem;
-  font-weight: 700;
-  color: white;
+  font-weight: 600;
+  color: #000;
 }
 .contact-sec__container button {
   width: 400px;
   height: 60px;
-  border: 1px solid black;
+  border: 1px solid #0466c8;
   border-radius: 5px;
   margin: 0 auto;
   font-size: 2.4rem;
+  background-color: white;
   cursor: pointer;
+  transition: transform 200ms ease;
 }
 .contact-sec__container button a {
-  color: black;
+  color: #0466c8;
   font-weight: 500;
   font-family: "Montserrat", sans-serif;
+  font-style: italic;
+}
+.contact-sec__container button:hover {
+  transform: scale(1.03);
+  transition: transform 200ms ease;
+}
+
+.footer-section {
+  width: 100%;
+  background-color: #051923;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-section .footer__container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer-section .footer__container h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: white;
+}
+.footer-section .footer__container .socials-cont {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.footer-section .footer__container .socials-cont .fa-github, .footer-section .footer__container .socials-cont .fa-linkedin {
+  color: white;
+  font-size: 2rem;
+}
+.footer-section .footer__container .copy {
+  font-size: 1.6rem;
+  color: white;
+  text-align: center;
+  font-weight: 200;
 }

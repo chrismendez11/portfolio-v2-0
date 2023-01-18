@@ -1,10 +1,11 @@
 import React from 'react'
-import photo from '../../assets/imgs/photo.png'
+import photo from '../../assets/imgs/photo.jpg'
 import cv from '../../assets/ChristianMendezCV.pdf'
 
 const AboutMe = () => {
     return (
         <section id='me' className='about-sec-container'>
+            <div className='about-content'>
             <div className='photo__container'>
                 <div className='photo-frame__cont'>
                     <img src={photo} alt="" />
@@ -15,10 +16,10 @@ const AboutMe = () => {
                 <hr className='hr-about' />
                 <h2>About me</h2>
                 <div className='about-p__cont'>
-                    <p>Hi there! I'm Christian and I'm a Frontend Web Developer, I've knowledge of the main web technologies such as HTML, CSS, JAVASCRIPT. I've also used REACTJS and REDUX on my last projects. </p>
+                    <p>Hi there! I'm Christian and I'm a Full-Stack Web Developer, mainly using Reactjs and Django to make web applications working on both Front-End and Back-End development. </p>
                     <p>
-                        I recently joined a bootcamp (Academlo) where I learned and put into practice most of the latest and most used technologies specially for Front-End development.
-                        I'm always open to keep learning whatever is needed for the projects I'm working on.</p>
+                    A few months ago I finished a web development bootcamp and also recently I had the opportunity to do an Internship at a software development company.</p>
+                    <p>I'm a self-taught person, every time I see something that I find it interesting I try to learn about it.</p>
                 </div>
                 <button className="cta">
                     <span><a href={cv} target="_blank">Display CV</a></span>
@@ -27,6 +28,7 @@ const AboutMe = () => {
                         <polyline points="8 1 12 5 8 9"></polyline>
                     </svg>
                 </button>
+            </div>
             </div>
         </section>
     )

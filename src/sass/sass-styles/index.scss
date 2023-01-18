@@ -8,6 +8,9 @@
 // Colors
 @import 'colors';
 
+// Utilities (margin, padding, opacity)
+@import 'utilities';
+
 // Components
 @import 'components/containers';
 @import 'components/projects-section';
@@ -15,7 +18,6 @@
 @import 'components/about-section';
 @import 'components/header-section';
 @import 'components/contact-sec';
+@import 'components/footer-section';
 
 
-// Utilities (margin, padding, opacity)
-@import 'utilities';

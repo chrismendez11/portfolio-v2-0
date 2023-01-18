@@ -6,12 +6,11 @@ function App() {
 
   return (
     <div className="App">
-      <div className='content-container'>
-        <NavBar />
+      {/* <div className='content-container'> */}
         <Routes>
           <Route path='/' element={<Home />} />
         </Routes>
-      </div>
+      {/* </div> */}
     </div>
   )
 }

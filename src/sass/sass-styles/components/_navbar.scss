@@ -4,7 +4,6 @@
 	justify-content: space-between;
 	height: 80px;
 	padding: 0 2rem;
-	background-color: $bg-color;
     h2 {
         font-size: 4.0rem;
         font-weight: 600;
@@ -16,11 +15,11 @@
 nav a {
 	color: white;
 	text-decoration: none;
-    font-size: $font-size-pm;
+    font-size: 1.8rem;
 }
 
 nav a:hover {
-	color: $feature-color;
+	color: $text-color;
 }
 
 .navbar-cont .nav-btn {
@@ -58,7 +57,7 @@ nav a:hover {
 		align-items: center;
 		justify-content: center;
 		gap: 1.5rem;
-		background-color: $bg-color;
+		background-color: $text-color;
 		transition: 1s;
 		transform: translateY(-100vh);
 	}

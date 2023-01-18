@@ -1,27 +1,36 @@
 .contact-sec__container {
+    border-top: 1px solid $text-color;
     display: flex;
     flex-direction: column;
     gap: 40px;
     text-align: center;
     height: 80vh;
     justify-content: center;
+    background-color: $bg-color;
     h2 {
         font-size: 4.8rem;
-        font-weight: 700;
+        font-weight: 600;
         color: $title-color;
     }
     button {
         width: 400px;
         height: 60px;
-        border: 1px solid black;
+        border: 1px solid $feature-color;
         border-radius: 5px;
         margin: 0 auto;
-        font-size: $font-size-ts;
+        font-size: 2.4rem;
+        background-color: $bg-color;
         cursor: pointer;
         a {
-            color: black;
+            color: $feature-color;
             font-weight: 500;
             font-family: 'Montserrat', sans-serif;
+            font-style: italic;
         }
+        &:hover {
+            transform: scale(1.03);
+            transition: transform 200ms ease;
+        }
+        transition: transform 200ms ease;
     }
 }

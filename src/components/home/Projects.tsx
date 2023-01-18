@@ -5,7 +5,8 @@ import AllProjects from '../../data'
 const Projects = () => {
   return (
     <section id='projects' className='projects-sect-container'> 
-      <div className='title-cont'>
+    <div className='projects-content'>
+    <div className='title-cont'>
         <span className='who-i-am'>what i do <i className="fa-solid fa-rocket"></i></span>
         <hr className='hr-projects' />
         <h2>Projects</h2>
@@ -16,9 +17,10 @@ const Projects = () => {
           <FavProject key= {project.id} project={project} />
         ))}
       </div>
-      <div className='btn-allprojects__cont'>
+      {/* <div className='btn-allprojects__cont'>
         <a href='https://app.netlify.com/teams/chrisliner11/sites' target="_blank">See all my projects --&gt;</a>
-      </div>
+      </div> */}
+    </div>
     </section>
   )
 }

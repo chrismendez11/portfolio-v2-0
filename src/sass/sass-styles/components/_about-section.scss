@@ -1,65 +1,71 @@
 .about-sec-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 40px;
-    height: 80vh;
-    .photo__container {
-        padding: 40px;
-        display: flex;
-        align-items: center;
-        .photo-frame__cont {
-            margin: 0 auto;
-            width: 100%;
-            max-width: 400px;
-            background-color: #457b9d;
+    width: 100%;
+    background-color: $bg-color;
+    .about-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+        height: 80vh;
+        @include padding;
+        .photo__container {
+            padding: 40px;
             display: flex;
-            border-radius: 10px;
-            border: 2px solid $title-color;
-            &:hover {
-                border: 2px solid $feature-color;
+            align-items: center;
+            .photo-frame__cont {
+                margin: 0 auto;
+                width: 100%;
+                max-width: 400px;
+                // background-color: $feature-color;
+                display: flex;
+                border-radius: 5px;
+                border: 2px solid $title-color;
+                &:hover {
+                    border: 2px solid $feature-color;
+                }
+                img {
+                    border-radius: 10px;
+                }
             }
-            img {
-                border-radius: 10px;
+            @include tl {
+                order: 1;
+            }
+        }
+        .about-info__container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+            .who-i-am {
+                font-size: 1.4rem;
+                font-weight: 400;
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                color: $text-color;
+            }
+            h2 {
+                font-size: 4.8rem;
+                font-weight: 700;
+                color: $text-color;
+            }
+            .about-p__cont {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                p {
+                    font-size: 1.6rem;
+                    color: $text-color;
+                    line-height: 25px;
+                }
+            }
+            .hr-about {
+                width: 20%;
+                border-color: $feature-color;
             }
         }
         @include tl {
-            order: 1;
+            grid-template-columns: repeat(2, 1fr);
         }
-    }
-    .about-info__container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 20px;
-        .who-i-am {
-            font-size: 1.4rem;
-            font-weight: 400;
-            display: flex;
-            gap: 10px;
-            align-items: center;
-            color: $text-color;
-        }
-        h2 {
-            font-size: 4.8rem;
-            font-weight: 700;
-            color: $title-color;
-        }
-        .about-p__cont {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            p {
-                font-size: $font-size-pm;
-                color: $text-color;
-            }
-        }
-        .hr-about {
-            width: 20%;
-            border-color: $feature-color;
-        }
-    }
-    @include tl {
-        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -95,8 +101,8 @@
     position: relative;
     font-family: "Ubuntu", sans-serif;
     font-size: $font-size-pl;
-    font-weight: 600;
-    color: $title-color;
+    font-weight: 500;
+    color: $text-color;
    }
    
    .cta svg {
@@ -106,7 +112,7 @@
     fill: none;
     stroke-linecap: round;
     stroke-linejoin: round;
-    stroke: $title-color;
+    stroke: $text-color;
     stroke-width: 2;
     transform: translateX(-5px);
     transition: all 0.3s ease;
